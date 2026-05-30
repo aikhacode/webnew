@@ -2,6 +2,8 @@ import { MetadataRoute } from "next";
 import { BUSINESS_PROFILE, getProgrammaticRoutes } from "@/data/seoData";
 import { BLOG_POSTS } from "@/data/blogData";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = BUSINESS_PROFILE.websiteUrl;
 
