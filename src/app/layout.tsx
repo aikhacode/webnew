@@ -52,6 +52,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  verification: {
+    google: "PcfVZ8MC0Qa-jL5H0Iun6fhUpOI8rT6TRALYFCAa1w0", // Replace with your actual Google Search Console verification key
+  },
 };
 
 export default function RootLayout({
