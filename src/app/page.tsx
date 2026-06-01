@@ -84,8 +84,19 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
+      {/* Top Fullscreen Image Banner */}
+      <section style={{ width: "100%", height: "calc(100vh - 70px)", position: "relative", marginTop: "70px" }}>
+        <Image
+          src="/images/asokatrans.png"
+          alt="Armada Asoka Trans Madiun"
+          fill
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          priority
+        />
+      </section>
+
       {/* Hero Section */}
-      <section className="relative bg-slate-950 pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+      <section className="relative bg-slate-950 pt-20 pb-20 md:pt-24 md:pb-28 overflow-hidden">
         {/* Background Gradients */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950 -z-10" />
         <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl -z-10" />
